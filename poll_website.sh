@@ -4,3 +4,10 @@ source venv/bin/activate
 
 python process_snapshot.py
 
+rm website_pull.html
+
+git add website-snapshots/*
+
+git commit -m 'Automatic update and push'
+
+git push

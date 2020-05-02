@@ -13,4 +13,6 @@ date = tables[0].caption.text.split(' ')[-1]
 date = datetime.datetime.strptime(date, '%m/%d/%Y').strftime('%d/%m/%Y')
 date = date.replace('/', '-')
 
-copyfile('daily_pull.html', f'website-snapshots/{date}.html')
+copyfile('website_pull.html', f'website-snapshots/{date}.html')
+
+print(f'Copied snapshot from {date}')
